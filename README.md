@@ -9,10 +9,10 @@ To create more Python scripts to run on future client's .csv inventory files, fi
 
 Then run `jupyter-lab` to start JupyterLab in your browser. A new window will open where you can begin to edit code.
 
-###### What is JupyterLab?
+### What is JupyterLab?
 JupyterLAb is a web-based interactive development environemnt. It is great to use with Python! The coolest thing about Jupyter is you can run Python scripts on a web browser, but all the code is saved on your local machine.
 
-###### What is Pandas?
+### What is Pandas?
 It is a powerful Python library that can:
 1. Read and write data between in-memory data structures and different formats: CSV files, Microsoft Excel, and SQL databases
 2. Resahpe and pivote data sets
