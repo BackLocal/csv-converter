@@ -2,9 +2,10 @@
 Converts inventory .csv files to a format Google Merchant will except for local feed uploads. This includes deleting unecesasry column attributes, getting rid of null values, and renaming column attributes according to [Google standards](https://support.google.com/merchants/answer/7052112?visit_id=637841690100276276-3785271917&rd=1#zippy=) This will help make the manual process of regularly uploading client's inventory to the local product listing a little easier. Until the creation of a connection with each client's POS system through an API, you will still have to manually go to the POS system and download the inventory as a .csv file, then run this script to reformat the file, then manually go into Google Merchant Center and upload the new .csv file (found on your local machine) as a supplemental feed to the local product lisitng.
 
 # Installation
-To create more Python scripts to run on future client's .csv inventory files, first you need to install pandas and jupyterlab by running these commands on your local machines terminal.
+To create more Python scripts to run on future client's .csv inventory files, first you need to install pandas, regex, and jupyterlab by running these commands on your local machines terminal.
 
 `pip install pandas`
+`pip install regex`
 `pip install jupyterlab`
 
 Then run `jupyter-lab` to start JupyterLab in your browser. A new window will open where you can begin to edit code.
@@ -19,3 +20,7 @@ It is a powerful Python library that can:
 3. Slice, index, and create subsets of large data sets
 4. Columns can be inserted and deleted from data structures for size mutability
 5. Merge and join data sets
+
+# NOTE:
+* You will have to replace all of the file paths when using `pd.read_csv('')` to the path on your local machine when you download the .csv file.
+* The POS systems do not provide the image link or link of the product on the website (both are required by Google). You can impelement this by doing webscraping and then adding the link of the item to the new .csv file.
